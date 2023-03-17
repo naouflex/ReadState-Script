@@ -21,7 +21,7 @@ Make sure to save the .env file in the root directory of your project, as the lo
     - `ETHERSCAN_API_KEY`: API key for Etherscan.io to retrieve the contract ABI
 
 ## Usage
-python script.py <contract_address> <function_names> <number_of_blocks>
+python3 script.py <contract_address> <function_names> <number_of_blocks>
 
 - `contract_address`: Ethereum smart contract address to retrieve state values from
 - `function_names`: Space-separated list of smart contract function names to retrieve state values for
@@ -30,6 +30,6 @@ python script.py <contract_address> <function_names> <number_of_blocks>
 The script will output a CSV file with the state values of the specified smart contract functions over the specified number of previous blocks. The CSV file will be named based on the current timestamp, the contract address, the function names, and the number of blocks.
 
 ## Example
-python script.py 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4 balanceOf totalSupply 10
+python3 script.py 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4 balanceOf totalSupply 10
 
 This will retrieve the `balanceOf` and `totalSupply` state values for the smart contract with address `0x5B38Da6a701c568545dCfcB03FcB875f56beddC4` over the previous 10 blocks and store the results in a CSV file.
